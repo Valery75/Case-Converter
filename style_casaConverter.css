@@ -1,0 +1,38 @@
+body {
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  textarea {
+    width: 90%;
+    min-height: 30vw;
+    border: 2px solid red;
+    margin-left: 20px;
+  }
+  .btn {
+  display: inline-block;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #e9a12c;
+  }
+  .btn:hover {
+    background: #00a666;
+  }
+  
+  .btn:active {
+    background: #f38b3b;
+    color: #1a70f9;
+  }

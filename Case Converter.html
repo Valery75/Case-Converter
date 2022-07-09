@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="style_casaConverter.css">
+</head>
+<body>/
+
+<div class="title"> Убедитесь, что он содержит Case Converterтекст;</div>
+<p id='par'>Это абзац с id=par.</p>
+<textarea id="myTextarea">По умолчанию он должен быть пуст</textarea>
+<button id="upper-case" class="btn">Upper Case</button>
+<button id="lower-case" class="btn">Lower Case</button>
+<button id="proper-case" class="btn">Proper Case</button>
+<button id="sentence-case" class="btn">Sentence Case</button>
+<button id="save-text-file" class="btn">Save Text File</button>
+
+
+<script>/*
+    var output = [], depth = 0, currentNode = document.firstChild, type = true, stack = [];
+    function tab(depth) {
+      var output = '';
+      if (depth !== 0) {
+        for (var i = 0; i < depth; i++) {
+          output += '|';
+        }
+      }
+      return output + '-';
+    }
+    while (currentNode) {
+      if (type) {
+        if (currentNode.nodeType === 3) {
+          output.push(tab(depth) + '<b>#text</b>');
+        } else if (currentNode.nodeType === 1) {
+          if (currentNode.id) {
+            output.push(tab(depth) + '<b>' + currentNode.tagName.toLowerCase() + '#' + currentNode.id + '</b>');
+          } else {
+            output.push(tab(depth) + '<b>' + currentNode.tagName.toLowerCase() + '</b>');
+          }
+        }
+      }
+      if (type && currentNode.firstChild) {
+        type = true;
+        depth++;
+        stack.push(currentNode);
+        currentNode = currentNode.firstChild;
+      } else if (currentNode.nextSibling) {
+        type = true;
+        currentNode = currentNode.nextSibling;
+      } else {
+        type = false;
+        if (currentNode.parentElement) {
+          if ((currentNode.nodeType !== 3 && currentNode.parentElement.childNodes.length !== 1) || (currentNode.nodeType == 3 & currentNode.parentElement.childNodes.length >= 1)) {
+            depth--;
+          } 
+        }
+        currentNode = stack.pop();
+      }
+    }
+
+    document.write('<br><b>DOM-структура документа:</b><br>');
+    document.write(output.join('<br>'));*/
+  </script>
+<script src="caseConverter.js" defer></script>
+</body>
+</html>
